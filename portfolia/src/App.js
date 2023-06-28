@@ -1,12 +1,10 @@
 import './App.css';
-import Navbar from "./Shared/Navbar"
-import Footer from "./Shared/Footer"
+import AboutMe from './AboutMe/pages/AboutMe';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Footer />
+      <AboutMe />
     </>
   );
 }

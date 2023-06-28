@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+  --mustYellow: #e6b800;
+}
+
+
 body {
   padding: 0px 40px 0px;
+  background-color: var(--mustYellow);
 }

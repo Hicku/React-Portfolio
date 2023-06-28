@@ -1,0 +1,41 @@
+/* variables */
+:root {
+    --black: black;
+}
+
+
+.ul-contact {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.contact-links-container{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+#text-im{
+    position: absolute;
+    background-color: var(--black);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+h3{
+    background-color: aquamarine;
+    height: fit-content;
+    padding-left: 50px;
+    display: block;
+
+}
+
+.links {
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    color: var(--black);
+}
