@@ -1,0 +1,53 @@
+/* variables */
+
+:root {
+    --mustYellow: #e6b800;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 5px 7.5px 0px 0px;
+    justify-content: space-between;
+    background-color: var(--mustYellow);
+  }
+
+  .logo {
+    width: 75px;
+    height: 75px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  
+  .titleDiv {
+    background-color: var(--mustYellow);
+    flex: 1; 
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+    background-color: var(--mustYellow);
+    padding-right: 20px;
+  }
+
+  .nav-buttons {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+  .nav-buttons:hover {
+    background-color: brown;
+    color: white;
+    border-bottom: 4px solid var(--black);
+    font-size: 20px;
+  }
