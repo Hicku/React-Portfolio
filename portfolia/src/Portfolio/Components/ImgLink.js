@@ -5,6 +5,7 @@ import plannerImg from"../../Utils/Images/Planner.png"
 import quizImg from "../../Utils/Images/Quiz.png"
 import footballImg from "../../Utils/Images/Football.png"
 import weatherImg from "../../Utils/Images/weather-API.png"
+import passwordImg from "../../Utils/Images/219435891-86a3d0ad-1d86-4aa4-aa74-f37435b9a7a4.png"
 
 const ImgLink = () => {
 
@@ -45,19 +46,33 @@ const workArr = [
         gitUrl: "https://github.com/Hicku/Quiz",
         deployedUrl: "https://hicku.github.io/Quiz/",
       },
+      {
+        title: "Quiz",
+        description: "A multiple choice quiz with questions on basic Jaascript. You will start with 100 seconds. Each each question will present four answers for you to choose from",
+        image: passwordImg,
+        gitUrl: "https://github.com/Hicku/Random-password-generator",
+        deployedUrl: " https://hicku.github.io/Random-password-generator/",
+      },
     
   ];
   
 
   return (
     <div className='mainContainer'>
+      <div>
+        <h2 className='title-container'>
+          Work
+        </h2>
+      </div>
         <ul className='imgsContainer'>
             {workArr.map(work  => {
                 return <li className='imgContainer'>
                     <h3 className='portTitle'>
                         {work.title}
                     </h3>
-                    <img className="portImg" src={work.image}></img>
+                    <a href={work.deployedUrl}>
+                      <img className="portImg" src={work.image}></img>
+                    </a>
                 </li>
             
             })}

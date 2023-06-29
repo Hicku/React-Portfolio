@@ -14,8 +14,16 @@ const Form = () => {
   };
 
   const handleEmailChange = (event) => {
-    setEmail(event.target.value);
+    const enteredEmail = event.target.value;
+    setEmail(enteredEmail);
     setEmailError('');
+
+    // Email validation regex pattern
+    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+    if (!emailPattern.test(enteredEmail)) {
+      setEmailError('Invalid email address');
+    }
   };
 
   const handleSubmit = (event) => {

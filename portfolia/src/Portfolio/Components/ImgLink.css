@@ -1,6 +1,9 @@
 .portImg {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .imgsContainer {
@@ -28,7 +31,18 @@
     justify-content: center;
   }
 
+  .title-container {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
   .mainContainer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+    @media (max-width: 768px) {
+       .imgsContainer{
+        grid-template-columns: repeat(1, 1fr); 
+      }
+    }

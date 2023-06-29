@@ -1,4 +1,8 @@
-* {
+:root {
+  --mustYellow: #e6b800;
+}* 
+
+{
     margin: 0;
     padding: 0;
     border-size: border-box;
@@ -6,7 +10,7 @@
   
   html {
     height: 100vh;
-    background: #666666;
+    background: var(--mustYellow);
     font-family: 'Balsamiq Sans', sans-serif;
   }
   
@@ -114,6 +118,25 @@
     font-size: 14px;
     margin-top: 5px;
   }
+
+  .error {
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+
+  .contactText {
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+  }
+
+  
   
   @media screen and (max-width: 900px) {
     .card .row {
@@ -138,3 +161,4 @@
       width: 100%;
     }
   }
+

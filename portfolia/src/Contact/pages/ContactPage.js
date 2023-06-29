@@ -9,7 +9,7 @@ const ContactPage = () => {
         <div className="formContainer">
           <Form />
         </div>
-        <Footer />
+          <Footer />
       </div>
   );
 };
