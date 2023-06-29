@@ -108,6 +108,12 @@
     color: #ffffff;
     transition: all 0.4s;
   }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
   
   @media screen and (max-width: 900px) {
     .card .row {
