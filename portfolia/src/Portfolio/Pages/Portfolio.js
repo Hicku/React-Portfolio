@@ -1,16 +1,14 @@
-import React from 'react'
-import Navbar from '../../Shared/Navbar'
-import Footer from '../../Shared/Footer'
-import ImgLink from '../Components/ImgLink'
+import React from 'react';
+import Footer from '../../Shared/Footer';
+import ImgLink from '../Components/ImgLink';
 
 const Portfolio = () => {
   return (
-    <div>
-        <Navbar />
+      <div>
         <ImgLink />
         <Footer />
-    </div>
-  )
+      </div>
+  );
 }
 
-export default Portfolio
+export default Portfolio;

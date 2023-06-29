@@ -21,51 +21,47 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!name) {
+    if (name === '') {
       setNameError('Name is required');
     }
 
-    if (!email) {
+    if (email === '') {
       setEmailError('Email is required');
     }
-
-    // Additional validation and submission logic here
   };
 
   return (
-    <div className='formContainer'>
+    <div className="formContainer">
       <div className="card">
-        <h2 className='contactText'>Contact</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col">
-              <div className="form-group">
-                <label>Name</label>
-                <input type="text" value={name} onChange={handleNameChange} />
-                {nameError && <p className="error">{nameError}</p>}
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="form-group">
-                <label>Email</label>
-                <input type="text" value={email} onChange={handleEmailChange} />
-                {emailError && <p className="error">{emailError}</p>}
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="form-group">
-                <label>Message</label>
-                <textarea value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-              </div>
-            </div>
-
-            <div className="col">
-              <input type="submit" value="Submit" />
+        <h2 className="contactText">Contact</h2>
+        <div className="row">
+          <div className="col">
+            <div className="form-group">
+              <label>Name</label>
+              <input type="text" value={name} onChange={handleNameChange} className={nameError ? 'error' : ''} />
+              {nameError && <span className="error">{nameError}</span>}
             </div>
           </div>
-        </form>
+
+          <div className="col">
+            <div className="form-group">
+              <label>Email</label>
+              <input type="text" value={email} onChange={handleEmailChange} className={emailError ? 'error' : ''} />
+              {emailError && <span className="error">{emailError}</span>}
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="form-group">
+              <label>Message</label>
+              <textarea value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+            </div>
+          </div>
+
+          <div className="col">
+            <input type="submit" value="Submit" onClick={handleSubmit} />
+          </div>
+        </div>
       </div>
     </div>
   );
