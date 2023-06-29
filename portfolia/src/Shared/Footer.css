@@ -1,6 +1,7 @@
 /* variables */
 :root {
     --black: black;
+    --mustYellow: #e6b800;
 }
 
 
@@ -27,7 +28,7 @@
   }
 
 h3{
-    background-color: aquamarine;
+    background-color: var(--mustYellow);
     height: fit-content;
     padding-left: 50px;
     display: block;

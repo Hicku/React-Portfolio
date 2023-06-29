@@ -1,0 +1,23 @@
+.portImg {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .imgsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    background-color: blue;
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; 
+  }
+  
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin: auto;
+  }
