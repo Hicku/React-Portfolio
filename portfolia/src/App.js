@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<AboutMe />} exact/>
-        <Route path="/work" element={<Portfolio />} exact/>
-        <Route path="/contact" element={<ContactPage />} exact/>
+        <Route path="/work" element={<Portfolio />}/>
+        <Route path="/contact" element={<ContactPage />}/>
       </Routes>
     </Router>
   );
