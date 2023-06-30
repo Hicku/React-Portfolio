@@ -1,24 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Navbar.css";
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 import logoImage from '../Utils/Images/LOGO2.png';
 
 const Navbar = () => {
   return (
     <nav>
-      <div className='titleDiv'>
-        <img className='logo' src={logoImage} alt="Logo" />
+      <div className="titleDiv">
+        <img className="logo" src={logoImage} alt="Logo" />
       </div>
 
       <ul className="ul-nav">
         <li>
-          <Link className="nav-buttons" to="/">About</Link>
+          <NavLink
+            exact
+            to="/"
+            className="nav-buttons"
+            activeClassName="active-link"
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-buttons" to="/work">Work</Link>
+          <NavLink
+            to="/work"
+            className="nav-buttons"
+            activeClassName="active-link"
+          >
+            Work
+          </NavLink>
         </li>
         <li>
-          <Link className="nav-buttons" to="/contact">Contact</Link>
+          <NavLink
+            to="/contact"
+            className="nav-buttons"
+            activeClassName="active-link"
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>

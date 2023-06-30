@@ -2,39 +2,43 @@ import React, { useState } from 'react';
 import './form.css';
 
 const Form = () => {
+  // State variables to store form input values and error messages
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
 
+  // Event handler for name input changes
   const handleNameChange = (event) => {
     setName(event.target.value);
-    setNameError('');
+    setNameError(''); // Clear the name error message
   };
 
+  // Event handler for email input changes
   const handleEmailChange = (event) => {
     const enteredEmail = event.target.value;
     setEmail(enteredEmail);
-    setEmailError('');
+    setEmailError(''); // Clear the email error message
 
     // Email validation regex pattern
     const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
     if (!emailPattern.test(enteredEmail)) {
-      setEmailError('Invalid email address');
+      setEmailError('Invalid email address'); // Set the email error message if the entered email is invalid
     }
   };
 
+  // Event handler for form submission
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (name === '') {
-      setNameError('Name is required');
+      setNameError('Name is required'); // Set the name error message if the name is empty
     }
 
     if (email === '') {
-      setEmailError('Email is required');
+      setEmailError('Email is required'); // Set the email error message if the email is empty
     }
   };
 
@@ -46,7 +50,12 @@ const Form = () => {
           <div className="col">
             <div className="form-group">
               <label>Name</label>
-              <input type="text" value={name} onChange={handleNameChange} className={nameError ? 'error' : ''} />
+              <input
+                type="text"
+                value={name}
+                onChange={handleNameChange}
+                className={nameError ? 'error' : ''}
+              />
               {nameError && <span className="error">{nameError}</span>}
             </div>
           </div>
@@ -54,7 +63,12 @@ const Form = () => {
           <div className="col">
             <div className="form-group">
               <label>Email</label>
-              <input type="text" value={email} onChange={handleEmailChange} className={emailError ? 'error' : ''} />
+              <input
+                type="text"
+                value={email}
+                onChange={handleEmailChange}
+                className={emailError ? 'error' : ''}
+              />
               {emailError && <span className="error">{emailError}</span>}
             </div>
           </div>
