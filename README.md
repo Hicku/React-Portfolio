@@ -17,3 +17,7 @@ Contributions are welcome! If you encounter any bugs, issues, or have suggestion
 
 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute this project in accordance with the terms and conditions of the license.
+
+https://github.com/Hicku/React-Portfolio
+
+https://hicku.github.io/React-Portfolio/
