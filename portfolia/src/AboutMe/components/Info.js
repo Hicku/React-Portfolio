@@ -7,7 +7,7 @@ const Info = () => {
     <div>
       <section className="section-2" id="about">
         <div className='titleDiv2'>
-        <h2 className='aboutTitle'>About</h2>
+        <h2 className='aboutTitle'>About m</h2>
         </div>
         <article className="section2-content">
           <p className="section-2-text">
